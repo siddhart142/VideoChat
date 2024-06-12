@@ -1,9 +1,16 @@
 
 import React from 'react';
+import {Routes, Route} from "react-router-dom"
+import Lobby from './Screens/Lobby';
+
 function App() {
  
   return (
-    <h1>Hello</h1>
+    <div>
+      <Routes>
+        <Route path="/" element={<Lobby/>} />
+      </Routes>
+    </div>
   )
 
 }
